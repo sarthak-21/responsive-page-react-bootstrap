@@ -29,11 +29,25 @@ function App() {
       </nav>
       <header>
         <div className="header-text">
-          <h1>Computer Engineering</h1>
-          <h4>142,765 Computer Engineers follow this</h4>
+          <h1 className="main-head">Computer Engineering</h1>
+          <h4 className="followed-head">142,765 Computer Engineers follow this</h4>
         </div>
       </header>
       <main>
+        <div className="mobile-nav-container">
+          <h4>Posts(368)</h4>
+          <Dropdown>
+               <Dropdown.Toggle variant="success" id="dropdown-basic">
+                 Filter: All
+               </Dropdown.Toggle>
+         
+               <Dropdown.Menu>
+                 <Dropdown.Item href="#/action-1">All</Dropdown.Item>
+                 <Dropdown.Item href="#/action-2">Recents</Dropdown.Item>
+                 <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+               </Dropdown.Menu>
+            </Dropdown>
+        </div>
         <div className="main-nav-container">
           <div className="tags">
             <span className="tag-name first-tag">All Posts(32)</span>
@@ -85,9 +99,9 @@ function App() {
             />
           </div>
           <div className="right-sidebar">
-            <span class="material-icons">location_on</span>
+            <span class="material-icons location-icon">location_on</span>
             <input type="text" placeholder="Noida" />
-            <span class="material-icons">edit</span>
+            <span class="material-icons edit-icon">edit</span>
           </div>
         </div>
       </main>
